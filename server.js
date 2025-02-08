@@ -20,6 +20,6 @@ route.get("/tasks/:taskId", getbyId);
 route.put("/update/:taskId", modifyTask);
 
 
-app.listen(2020, () => {
-  console.log("Server is listening on port 2020");
+app.listen(2025, () => {
+  console.log("Server is listening on port 2025");
 });
