@@ -13,7 +13,7 @@ const getbyId = async (req, res) => {
       const task = await Task.findById(taskId );
     
       if (!task) {
-        return res.status(404).json({ message: "Task doesn't exist" });
+        return res.status(401).json({ message: "Task doesn't exist" });
       }
     
       res.status(200).json({message: "Task fetched successfully", task})
